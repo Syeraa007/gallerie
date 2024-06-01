@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallerie | A Photo search App</title>
+    <!-- CSS style links -->
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/detail.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="./"><img src="./assets/logo.png" alt="logo" class="logo"></a>
+        <a href="./" class="title"><h1>GALLERIE</h1></a>
+        <form action="./search.html" method="get">
+            <input type="text" name="q" autocomplete="off" class="search" placeholder="Search anything">
+            <input type="submit" value="SEARCH" class="search">
+        </form>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+        <h1 class="heading">&lt; DETAIL FOR - <span id="image_id"></span> /&gt;</h1>
+        <div class="detail">
+            <img id="detail_image" alt="Primary_image">
+            <div class="content">
+                <h1 class="description" id="description_text"></h1>
+                <br>
+                <h3>Uploaded by - @<span id="username"></span></h3>
+                <br>
+                <!-- Date -->
+                <h4>Date - <span id="upload_date"></span></h4>
+                <!-- Like and View -->
+                <h5><span id="like_count"></span> Likes ( <span id="view_count"></span> Views)
+                </h5>
+                <br><hr><br>
+                <!-- Alternate Description -->
+                <h1 class="description" id="alt_description"></h1>
+                <br><hr><br>
+                <!-- Color of image -->
+                <h5> Base Color </h5>
+                <br>
+                <div id="image_color" class="image_color"><span id="color_text"></span></div>
+                <br><br>
+                <!-- Download -->
+                <a target="_blank" class="button" id="download_link">&lt;Download /&gt;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer of the page -->
+    <footer>
+        <a href="./"><h5>Gallerie</h5></a>
+        <h1>|</h1>
+        <h5>Designed and Developed by Syeraa and Team!</h5>
+        <h1>|</h1>
+        <a href="./"><h5>GitHub</h5></a>
+        <!-- <p>Copyright &copy; 2019 Gallerie</p> -->
+    </footer>
+
+    <!-- Javascript property links -->
+    <script src="./assets/index.js"></script>
+    <script src="./assets/detail.js"></script>
+</body>
+</html>
