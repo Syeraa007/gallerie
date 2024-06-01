@@ -14,3 +14,6 @@
 
 ## Font
 - https://fonts.google.com/specimen/Press+Start+2P?query=press+@standard-styles
+
+## Hosted URL
+- https://web-photo-gallerie-app.netlify.app
